@@ -6,3 +6,11 @@
 //
 
 import Foundation
+class Order {
+    
+
+    var totalPrice :Int
+    init(totalPrice: Int) {
+        self.totalPrice = totalPrice
+    }
+}

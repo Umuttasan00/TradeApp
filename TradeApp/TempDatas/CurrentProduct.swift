@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+class CurrentProduct {
+
+    public static var product : Product = Product(productName: "", productDesc: "", productSeller: "", productPrice: "", productCategory: "", deliverType: "", productImageUrl1: "", productImageUrl2: "", productImageUrl3: "", productImageUrl4: "",documentId : "")
+    
+    public static var selectedProduct: Product? = nil
+}

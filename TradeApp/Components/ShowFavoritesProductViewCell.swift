@@ -9,9 +9,17 @@ import UIKit
 
 class ShowFavoritesProductViewCell: UITableViewCell {
 
+    @IBOutlet weak var favoriteProductNameLbl: UILabel!
+    @IBOutlet weak var favoriteProductImageView: UIImageView!
+    @IBOutlet weak var favoriteProductDescLbl: UILabel!
+    @IBOutlet weak var favoriteProductPriecLbl: UILabel!
+    
+    var addBasketButtonAction: (() -> Void)?
+
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+               
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -19,5 +27,8 @@ class ShowFavoritesProductViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    @IBAction func addBasketBtnClc(_ sender: Any) {
+        addBasketButtonAction?()
+    }
+    
 }

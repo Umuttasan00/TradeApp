@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+class SignedUser {
+    public static var user : User = User(userEmail: "", userName: "", userSurname: "", userPhoneNumber: "", userAddress: "", userProfilePhotoUrl: "", userGender: "")
+}

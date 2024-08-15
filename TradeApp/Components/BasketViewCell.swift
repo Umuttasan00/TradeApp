@@ -9,6 +9,14 @@ import UIKit
 
 class BasketViewCell: UITableViewCell {
 
+    @IBOutlet weak var fastDeliverLbl: UILabel!
+    @IBOutlet weak var productNameLbl: UILabel!
+    @IBOutlet weak var productPrice: UILabel!
+    @IBOutlet weak var productImage: UIImageView!
+    
+    var deleteProductOnBasketBtnClcAction: (() -> Void)?
+
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,4 +28,9 @@ class BasketViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    @IBAction func deleteProductOnBasketBtnClc(_ sender: Any) {
+        deleteProductOnBasketBtnClcAction?()
+    }
+    
+    
 }

@@ -6,3 +6,6 @@
 //
 
 import Foundation
+class CurrentOrder {
+    public static var order : Order = Order(totalPrice: 0)
+}
